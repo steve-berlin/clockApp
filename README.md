@@ -8,6 +8,8 @@
  2. In your clone, run the installer script (deps_install.sh)
  3. Do `./<utility-name>` to run `stopwatch` or `timer` program and `python3 alarm.py` to run the alarm clock
  4. Enjoy!
-## NOTE: PLEASE READ!
+## _NOTE_
+_If you enojoyed using this repo, consider giving the project a start, it wil be very appreciated!_
+## WARNING: PLEASE READ!
 The project is still in early beta,
 `stopwatch` and `timer` programs may not work on Windows machines!

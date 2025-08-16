@@ -44,7 +44,11 @@ int main() {
         hrs += mins / 60;
         mins %= 60;
     }
-
+if (sfx < 1 || sfx > 5) {
+        std::cerr << "Invalid sound effect choice. Please choose between 1 and 3.\n";
+        return 1;
+  
+} else
     int total_seconds = hrs * 3600 + mins * 60 + secs;
 
     while (total_seconds > 0) {

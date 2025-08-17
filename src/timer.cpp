@@ -51,10 +51,10 @@ if (sfx < 1 || sfx > 5) {
 } else
     int total_seconds = hrs * 3600 + mins * 60 + secs;
 
-    while (total_seconds > 0) {
-        int display_hrs = total_seconds / 3600;
-        int display_mins = (total_seconds % 3600) / 60;
-        int display_secs = total_seconds % 60;
+    while (secs > 0) {
+        int display_hrs = secs / 3600;
+        int display_mins = (secs % 3600) / 60;
+        int display_secs = secs % 60;
 
         // Clear line and print time
         std::cout << "\r"
@@ -64,7 +64,7 @@ if (sfx < 1 || sfx > 5) {
                   << std::flush;
 
         std::this_thread::sleep_for(std::chrono::seconds(1));
-        --total_seconds;
+        --secs;
     }
 
     int fd = open("/dev/input/event0", O_RDONLY);
